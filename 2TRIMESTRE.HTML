@@ -1,69 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu II trimestre</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>II Trimestre</title>
+</head>
+    <style>
+       
+    /* Fundo da página e cor do texto */
+body {
+  background-color: white;  /* página branca */
+  color: black;             /* letra preta */
+}
 
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background-color: #f4f4f4;
-    }
-
-    /* Barra de navegação */
-    .tarefas {
-      margin: 100px;
-      padding: 10px;
-      border: 10px solid #0044cc;
-      background-color: #0044cc;
+    /* Nav topo - horizontal */
+    .topnav {
+      background-color: blue;
       overflow: hidden;
       display: flex;
-      justify-content: center; /* força alinhamento no centro */
-    
+      justify-content: flex-start; /* força alinhamento à esquerda */
+      border: 10px solid blue;
+}
+
+.topnav a {
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+
+
+    .topnav a:hover {
+      background-color: gray;
     }
-    
 
-   .tarefas a {
-        color: white;
-        text-align: center;
-        padding: 14px 20px;
-        text-decoration: none;
-        }
-    
-
-    .tarefas a:hover {
-      background-color:gray
+    /* Layout principal */
+    .container {
+      display: flex;
     }
 
-    .lateral {
-      margin: 20px;
-      padding: 10px;
-      border: 2px solid #0044cc;
-      background-color: #0044cc;
+    /* Nav lateral - vertical */
+    .sidenav {
+      margin: 0%;
       width: 200px;
+      background-color:blue;
       padding-top: 20px;
       min-height: 100vh;
-    
-      
     }
-    .lateral a{
-      color: white;
-      text-align: center;
-      display: block;display: block; /* garante um abaixo do outro */
+
+    .sidenav a {
+      display: block; /* garante um abaixo do outro */
+      color:white;
       padding: 10px 15px;
       text-decoration: none;
-     
     }
-
-    .lateral a:hover {
-      background-color: gray
+    .sidenav a:hover {
+      background-color: gray;
     }
-       
-
-    /* Conteúdo principal */
-    .conteudo {
+    
+  
+    /* Conteúdo */
+    .content {
       margin: 40px auto;
       width: 80%;
       background-color: white;
@@ -72,45 +70,71 @@
       text-align: center;
     }
 
-    .conteudo h1 {
+    
+    .content h1{ 
       color: #0044cc;
     }
 
-    .conteudo p {
+    .content p {
       font-size: 18px;
+      color:black;
+    }
+
+  /* Tarefas no canto superior direito */
+    .tarefas {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      display: flex;
+      gap: 10px;
+    }
+
+    .tarefas a {
+      text-decoration: none;
+      color: white;
+      background-color: blue;
+      padding: 8px 12px;
+      border-radius: 4px;
+      transition: background-color 0.3s;
+    }
+
+    .tarefas a:hover {
+      background-color: gray; /* Hover cinza */
     }
   </style>
 </head>
 <body>
-
-
-  <!-- Navegação geral -->
-  <div class="lateral">
-    <a href="index.html">Voltar à Página Anterior</a>
-    <a href="Itrimestre.html">I Trimestre</a>
-    <a href="IIItrimestre.html">III Trimestre</a>
-    <a href="fim.html" >Fim</a>
+  <!-- Nav topo -->
+  <div class="topnav">
+    <a href="index.html">Home</a>
+    <a href="sobre mim.html">Sobre mim</a>
+    <a href="contacto.html">Contactos</a>
   </div>
 
-  <!-- Navegação das tarefas -->
-  <div class="tarefas">
-    <a href="T1.html">T1</a>
-    <a href="T2.html">T2</a>
-    <a href="T3.html">T3</a>
-    <a href="T4.HTML">T4</a>
-    <a href="T5.html">T5</a>
-    <a href="T6.html">T6</a>
-  </div>
+  <div class="container">
+    <!-- Nav lateral -->
+    <div class="sidenav">
+      <a href="index.HTML">PÁGINA INICIAL</a>
+      <a href="1TRIMESTRE.HTML">I TRIMESTRE</a>
+      <a href="3TRIMESTRE.HTML">III TRIMESTRE</a>
+      <a href="FIM.HTML">FIM</a>
+    </div>
 
-  <!-- Conteúdo principal -->
-  <div class="conteudo">
-
-    <h1 >Seja Bem-vindo ao meu II Trimestre</h1>
-    <p >Aqui poderás acompanhar as tarefas.</p>
-  </div>
-
+     <!-- Links das tarefas no centro -->
+    <div class="tarefas">
+      <a href="T1.html">T1</a>
+      <a href="T2.html">T2</a>
+      <a href="T3.html">T3</a>
+      <a href="T4.html">T4</a>
+      <a href="T5.html">T5</a>
+      <a href="T6.html">T6</a>
+    </div>
   
-
-
+    <!-- Conteúdo -->
+    <div class="content">
+      <h1>Bem-vindo ao meu II Trimestre</h1>
+      <p>Aqui você pode me acompanhar e saber mais sobre CSS.</p>
+    </div>
+  
 </body>
 </html>
