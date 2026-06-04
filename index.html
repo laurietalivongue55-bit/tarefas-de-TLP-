@@ -1,94 +1,85 @@
 <!DOCTYPE html>
-<html lang="pt">
-<head>  <meta charset="UTF-8">
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gestor de Tarefas</title>
-  <style>
-       
-    /* Fundo da página e cor do texto */
-body {
-  background-color: white;  /* página branca */
-  color: black;             /* letra preta */
-}
+</head>
+<style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
 
-
-    /* Nav topo - horizontal */
+    /* Nav topo */
     .topnav {
       background-color: blue;
       overflow: hidden;
-      display: flex;
-      justify-content: flex-start; /* força alinhamento à esquerda */
-      border: 10px solid blue;
-}
-
-.topnav a {
-  color: white;
-  text-align: center;
-  padding: 14px 20px;
-  text-decoration: none;
-}
-
-
-
-    .topnav a:hover {
-      background-color: gray;
     }
 
-    /* Layout principal */
+    .topnav a {
+      float: left;
+      color: white;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+    }
+
+    .topnav a:hover {
+      background-color: #ddd;
+      color: blue;
+    }
+
+    /* Container principal */
     .container {
       display: flex;
     }
 
-    /* Nav lateral - vertical */
+    /* Nav lateral */
     .sidenav {
-      margin: 0%;
       width: 200px;
-      background-color:blue;
+      background-color: blue;
       padding-top: 20px;
-      min-height: 100vh;
+      height: 100vh;
     }
 
     .sidenav a {
-      display: block; /* garante um abaixo do outro */
-      color:white;
+      display: block;
+      color: white;
       padding: 10px 15px;
       text-decoration: none;
     }
+
     .sidenav a:hover {
-      background-color: gray;
+      background-color:gray;
     }
 
     /* Conteúdo */
     .content {
-      margin: 40px auto;
-      width: 80%;
-      background-color: white;
-      padding: 30px;
-      box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
-      text-align: center;
+      flex: 1;
+      padding: 20px;
     }
 
-    
-    .content h1{ 
-      color: #0044cc;
+    /* Layout para duas divs lado a lado */
+    .row {
+      display: flex;
+      gap: 20px;
+      margin-top: 20px;
     }
 
-    .content p {
-      font-size: 18px;
-      color:black;
+    .column {
+      flex: 1;
+      background-color: #f4f4f4;
+      padding: 20px;
+      border: 1px solid #ccc;
     }
-
-
   </style>
-
-
-
 </head>
 <body>
+
   <!-- Nav topo -->
   <div class="topnav">
     <a href="index.html">Home</a>
-    <a href="sobre mim.html">Sobre mim</a>
-    <a href="contacto.html">Contactos</a>
   </div>
 
   <div class="container">
@@ -102,9 +93,27 @@ body {
   
     <!-- Conteúdo -->
     <div class="content">
-      <h1>Bem-vindo ao meu gestor de tarefas</h1>
-      <p>Aqui você pode ver as minhas tarefas de cada trimestre e acompanha o meu desenpenho no desenvolvimento web.</p>
+      <!-- Primeira DIV sozinha -->
+      <div>
+        <h1>Bem-vindo ao meu gestor de tarefas</h1>
+        <p>Aqui você pode ver as minhas tarefas de cada trimestre e acompanhar o meu desempenho no desenvolvimento web.</p>
+      </div>
+
+      <!-- Duas DIVs lado a lado -->
+      <div class="row">
+        <div class="column">
+          <h1>Sobre mim</h1>
+          <p>Sou uma pessoa muito dedicada e gosto de aprender novas tecnologias.</p>
+        </div>
+        <div class="column">
+          <h1>Contactos</h1>
+          <p>Telefone: 123456789</p>
+          <p>Email: laurietalivongue55@gmail.com</p>
+          <p>GitHub: laurietalivongue55</p>
+        </div>
+      </div>
     </div>
-  
+  </div>
+
 </body>
 </html>
