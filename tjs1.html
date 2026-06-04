@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <title>Introdução ao JavaScript - T1</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Nav topo -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="home.html">Home</a>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="tjs1.html">T1</a></li>
+          <li class="nav-item"><a class="nav-link" href="tjs2.html">T2</a></li>
+          <li class="nav-item"><a class="nav-link" href="tjs3.html">T3</a></li>
+          <li class="nav-item"><a class="nav-link" href="tjs4.html">T4</a></li>
+          <li class="nav-item"><a class="nav-link" href="tjs5.html">T5</a></li>
+            <li class="nav-item"><a class="nav-link" href="tjs6.html">T6</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Nav lateral -->
+  <div class="bg-primary text-white p-3" style="width:200px; height:100vh; position:fixed; top:0; left:0;">
+    <h5>Menu</h5>
+    <a href="home.html" class="text-white d-block mb-2">Home</a>
+    <a href="Itrimestre.html" class="text-white d-block mb-2">I Trimestre</a>
+    <a href="IItrimestre.html" class="text-white d-block mb-2">II Trimestre</a>
+    <a href="fim.html" class="text-white d-block mb-2">Fim</a>
+  </div>
+
+  <!-- Conteúdo -->
+  <div class="container" style="margin-left:220px; padding-top:30px;">
+    <h1 class="text-primary text-center">Introdução ao JavaScript</h1>
+    <p class="lead text-center">
+      O <strong>JavaScript</strong> é uma linguagem de programação essencial para o desenvolvimento web. 
+      Ele permite adicionar interatividade às páginas, manipular elementos HTML e CSS, e criar aplicações dinâmicas.
+    </p>
+
+    <h3>Principais características:</h3>
+    <ul>
+      <li>Executa diretamente nos navegadores.</li>
+      <li>Permite manipular o conteúdo da página em tempo real.</li>
+      <li>É usado junto com HTML e CSS para criar sites modernos.</li>
+      <li>Suporta programação orientada a objetos e funções.</li>
+    </ul>
+
+    <h3>Exemplo simples:</h3>
+    <pre><code>
+&lt;button onclick="alert('Olá, este é JavaScript!')"&gt;
+  Clique aqui
+&lt;/button&gt;
+    </code></pre>
+
+    <p>
+      No exemplo acima, ao clicar no botão, o JavaScript executa uma função que mostra uma mensagem na tela.
+    </p>
+
+    <p class="lead text-center">
+        <strong>Variaveis</strong>
+ São usadas para armazenar valores. Podem ser declaradas com var, let ou const.
+
+let → variável que pode mudar.
+
+const → valor fixo, não pode ser alterado.
+
+Tipos de dados  
+Principais tipos:
+
+string (texto)
+
+number (números)
+
+boolean (verdadeiro/falso)
+
+object (coleção de dados)
+
+array (lista ordenada)
+
+null e undefined (ausência de valor).
+</p>
+
+<p>
+<strong>Operadores</strong>
+
+
+Aritméticos: +, -, *, /.
+
+Comparação: ==, ===, >, <.
+
+Lógicos: &&, ||, !.
+    </p>
+<p>
+<strong>Estruturas de controle</strong>
+
+Controlam o fluxo do programa:
+
+if...else
+
+switch
+
+for, while, do...while.
+    </p>
+
+  </div>
+
+  <!-- Bootstrap JS + Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
